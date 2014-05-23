@@ -1,0 +1,12 @@
+name = GeoGratis OpenLayers Base Layers
+description = Base Map Layers in English and French using Natural Resources Canada's GeoGratis (WMS) dynamic mapping service
+core = 7.x
+package = Features
+version = 7.x-1.0-alpha1
+project = geogratis_openlayers_base_layers
+dependencies[] = ctools
+dependencies[] = openlayers
+features[ctools][] = openlayers:openlayers_layers:1
+features[features_api][] = api:2
+features[openlayers_layers][] = cbct_geogratis_canada
+features[openlayers_layers][] = cbmt_geogratis_canada
