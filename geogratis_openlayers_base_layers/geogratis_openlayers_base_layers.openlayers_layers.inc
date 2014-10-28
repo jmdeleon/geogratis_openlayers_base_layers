@@ -15,13 +15,13 @@ function geogratis_openlayers_base_layers_openlayers_layers() {
   $openlayers_layers->api_version = 1;
   $openlayers_layers->name = 'cbct_geogratis_canada';
   $openlayers_layers->title = 'CBCT GeoGratis Canada';
-  $openlayers_layers->description = '';
+  $openlayers_layers->description = 'Couche de base en français.';
   $openlayers_layers->data = array(
     'base_url' => 'http://geogratis.gc.ca/cartes/CBCT',
     'params' => array(
       'buffer' => '2',
       'ratio' => '1.5',
-      'singleTile' => 0,
+      'singleTile' => 1,
     ),
     'options' => array(
       'TRANSPARENT' => 0,
@@ -96,13 +96,13 @@ function geogratis_openlayers_base_layers_openlayers_layers() {
   $openlayers_layers->api_version = 1;
   $openlayers_layers->name = 'cbmt_geogratis_canada';
   $openlayers_layers->title = 'CBMT GeoGratis Canada';
-  $openlayers_layers->description = '';
+  $openlayers_layers->description = 'Base layer in English.';
   $openlayers_layers->data = array(
     'base_url' => 'http://geogratis.gc.ca/maps/CBMT',
     'params' => array(
       'buffer' => '2',
       'ratio' => '1.5',
-      'singleTile' => 0,
+      'singleTile' => 1,
     ),
     'options' => array(
       'TRANSPARENT' => 0,
